@@ -10,6 +10,7 @@ $versions = ConvertFrom-Csv -InputObject $response.Content
 # Create a new array to hold the version names and major build versions
 $version_info = @()
 
+<##
 # Loop through each object in the array and extract the version name and major build version
 foreach ($version in $versions) {
     $version_info += @{
@@ -20,3 +21,5 @@ foreach ($version in $versions) {
 
 # Output the resulting array
 $version_info
+##>
+$versions |ft
