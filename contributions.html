@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GitHub Contributions</title>
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1020px;
+      margin: 0 auto;
+    }
+
+    .box {
+      width: 12px;
+      height: 12px;
+      margin: 2px;
+      background-color: #ebedf0;
+    }
+
+    .legend {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1020px;
+      margin: 0 auto;
+      font-size: 12px;
+      color: #767676;
+      padding: 10px 0;
+    }
+
+    .legend span {
+      display: flex;
+      align-items: center;
+    }
+
+    .legend span::before {
+      content: "";
+      width: 12px;
+      height: 12px;
+      margin-right: 6px;
+      background-color: var(--color);
+    }
+
+    .weekday-names {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1020px;
+      margin: 0 auto;
+      font-size: 12px;
+      color: #767676;
+      padding-top: 5px;
+    }
+
+    .weekday-names span {
+      width: calc(100% / 7);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box" style="--color:#ebedf0;"></div> <!-- Empty box -->
+    <div class="box" style="--color:#c6e48b;"></div> <!-- Lightest shade -->
+    <div class="box" style="--color:#7bc96f;"></div>
+    <div class="box" style="--color:#239a3b;"></div>
+    <div class="box" style="--color:#196127;"></div> <!-- Darkest shade -->
+  </div>
+
+  <div class="legend">
+    <span>
+      <span style="--color:#ebedf0;"></span>
+      No contributions
+    </span>
+    <span>
+      <span style="--color:#c6e48b;"></span>
+      Few contributions
+    </span>
+    <span>
+      <span style="--color:#7bc96f;"></span>
+      Moderate contributions
+    </span>
+    <span>
+      <span style="--color:#239a3b;"></span>
+      Significant contributions
+    </span>
+    <span>
+      <span style="--color:#196127;"></span>
+      Highest contributions
+    </span>
+  </div>
+
+  <div class="weekday-names">
+    <span>Mon</span>
+    <span>Tue</span>
+    <span>Wed</span>
+    <span>Thu</span>
+    <span>Fri</span>
+    <span>Sat</span>
+    <span>Sun</span>
+  </div>
+</body>
+</html>
